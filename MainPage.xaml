@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ReForestation_Rover_Controller__RFRC_.MainPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Shell.NavBarIsVisible="false">
+    <StackLayout VerticalOptions="StartAndExpand" Spacing="15" Padding="15">
+        <toolkit:MediaElement 
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                MaximumHeightRequest="300"
+                MaximumWidthRequest="600"
+                Source="https://gogodownload.net/download.php?url=aHR0cHM6LyURASDGHUSRFSJGYfdsffsderFStewthsfSFtrfteAdeqwrwedffryretgsdFrsftrsvfsfsrsdf91d3VieHNoMXAzLmJlMDU5Y2ZlNjE1ZjYuY29tL3VzZXIxMzQyL2MyYTZmMDhiODhjNjA3NzcwMTc5OGEyNzZkZDg4ZGQxL0VQLjIudjAuMTY4OTI2OTExNi4xMDgwcC5tcDQ/dG9rZW49QzROT1VfRDZPYnhjRkQtMnV3dFRpdyZleHBpcmVzPTE2ODk1OTY5OTYmaWQ9MjA4MTMz"
+                ShouldShowPlaybackControls="False" />
+        <Grid HorizontalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70" />
+                <RowDefinition Height="70" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70" />
+                <ColumnDefinition Width="70" />
+            </Grid.ColumnDefinitions>
+            <Button
+                x:Name="rVerse"
+                Grid.Row="1"
+                Grid.Column="1"
+                Text="Verse"
+                Pressed="OnPressed"
+                Released="OnRelease"
+                CornerRadius="5"
+            />
+            <Button
+                x:Name="rWards"
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="Wards"
+                Pressed="OnPressed"
+                Released="OnRelease"
+                CornerRadius="5"
+            />
+            <Button
+                x:Name="lRever"
+                Grid.Row="1"
+                Grid.Column="0"
+                Text="   Re"
+                Pressed="OnPressed"
+                Released="OnRelease"
+                CornerRadius="5"
+            />
+            <Button
+                x:Name="lForwa"
+                Text="  For"
+                Pressed="OnPressed"
+                Released="OnRelease"
+                CornerRadius="5"
+            />
+        </Grid>
+        
+    </StackLayout>
+
+</ContentPage>
