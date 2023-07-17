@@ -2,21 +2,22 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+	string address = "http://192.168.3.1/";
 
-	public MainPage()
+
+    public MainPage()
 	{
 		InitializeComponent();
 	}
 
 	private void OnPressed(object sender, EventArgs e)
 	{
-		new HttpClient().GetAsync("http://192.168.3.1/p" + ((Button)sender).StyleId);
+		new HttpClient().GetAsync(address + "p" + ((Button)sender).StyleId);
 	}
 
     private void OnRelease(object sender, EventArgs e)
     {
-        new HttpClient().GetAsync("http://192.168.3.1/r" + ((Button)sender).StyleId);
+        new HttpClient().GetAsync(address + "r" + ((Button)sender).StyleId);
     }
 
 }
